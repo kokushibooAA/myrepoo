@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is heading v3</h1>
-    
+    <h1>this is heading v4</h1>
+
 </body>
 </html>
 
@@ -16,4 +16,26 @@ git status/git log
 git add index.html
 git commit -m "first v1 of index.html"
 git branch
--->
+
+used for the changes made
+git diff
+
+want to go back and check old or specific version/better than git show
+git checkout bd0790e90a78ecdf80799bc5abc9cb473ac670c7 -- *
+git checkout master -- *
+
+git restore *
+
+after add process
+git restore --staged .   / index.html
+git restore *
+
+two change one is want and other is mistake
+git restore --worktree .
+after commit
+git reset --soft HEAD^
+git reset --hard HEAD^
+git log -S "h1"
+git log -S "v3"
+
+git log --grep="v"->
